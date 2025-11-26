@@ -1,11 +1,12 @@
 const fs = require("fs");
-const input = fs.readFileSync(0, "utf8").trim().split(/\s+/);
+let input = fs.readFileSync(0).toString().trim().split(" ");
 
-const a = Number(input[0]);
-const b = Number(input[1]);
+let a = Number(input[0]);
+let b = Number(input[1]);
 
+// 출력
 if (a > b) {
     console.log(a * b);
 } else {
-    console.log(b / a);
+    console.log(parseInt(b / a));
 }
